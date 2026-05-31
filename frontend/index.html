@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Store | Premium Tech Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">CodeAlpha<span>Store</span></div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#shop-section">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span id="user-welcome"></span>
+                <a href="auth.html" id="auth-link" class="login-btn"><i class="fas fa-user"></i> Login</a>
+                <div class="cart-trigger" id="open-cart-btn">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span id="cart-counter">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Next-Gen Technology</h1>
+            <p>Exclusive deals on premium electronics and accessories.</p>
+            <a href="#shop-section" class="btn-shop">Shop Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <main id="shop-section" class="container">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <div class="underline"></div>
+        </div>
+        <div id="products-container" class="products-grid">
+            </div>
+    </main>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>My Shopping Bag</h3>
+            <button id="close-cart-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="cart-body">
+            <ul id="cart-items"></ul>
+        </div>
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Subtotal:</span>
+                <span>$<span id="cart-total">0.00</span></span>
+            </div>
+            <button id="checkout-btn" class="checkout-btn-final">Place My Order</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
